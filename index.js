@@ -1,6 +1,3 @@
-// calculator project
-// 1. Variables - Display, Assignment Operator, Arithmetic Operators
-
 
 // Variables - storage containers
 
@@ -32,7 +29,6 @@
 // null
 // NaN
 
-
 // Arithmetic Operations 
 // +
 // - 
@@ -63,6 +59,8 @@
 // console.log(a**b);
 //console.log(a%b);
 
+
+
 // COMPARISON OPERATORS 
 
 // <
@@ -82,6 +80,7 @@
 // console.log(b <= d); // true
 // console.log(c != true); // false
 // console.log(d == b); // false
+
 
 
 // LOGICAL OPERATORS
@@ -118,26 +117,28 @@
 // };
 
 
+
 // CONDITIONAL - if, else if, else
 
 // if - the first condition. Executes code if true.
 // else if - second condition. Executes code when 'if condition' is false.
 // else - third and last condition. Executes code when 'if and 'else if' are both false.
 
-let weather = "humid";
+// let weather = "humid";
 
-// conditions
+// // conditions
 
-if(weather === "rainy") {
-    console.log("Take an umbrella.");
-} else if(weather === "sunny") {
-    console.log("Wear sunglasses.");
-} else {
-    console.log("Check the weather app!");
-};
+// if(weather === "rainy") {
+//     console.log("Take an umbrella.");
+// } else if(weather === "sunny") {
+//     console.log("Wear sunglasses.");
+// } else {
+//     console.log("Check the weather app!");
+// };
 
 
 // control flow - the order of how we begin and end our code.
+
 
 
 // FUNCTIONS 
@@ -145,29 +146,38 @@ if(weather === "rainy") {
 // Re-usable blocks of code.
 
 // function sayHi (name) {
-//     console.log("Hello", name);
-// }
-// sayHi("John");
+//     return("Hello" + name);
+// };
+
+// console.log(sayHi("Anna")); 
+
+// function calculateNums() {
+//     let a = 56;
+//     let b = 20;
+
+//     return(a+b);
+// };
+
+// console.log(calculateNums());
 
 
 // Types of Functions 
 
 // 1. Expressions  - Function passed into Variables
 
-// const greet = function() {
-//     console.log("Hello there!");
+// const greet = function(name, age) {
+//     console.log("Hello there!", name, "I am", age, "years old.");
 // };
-
-// greet();
+// greet("john", 12);
 
 
 // 2. Arrow Functions - Shorter and Simpler way of writing functions.
 
-// const greet = () => {
-//     console.log("Hello There!")
+// const greet = (name, age) => {
+//     console.log("Hello There!", name, "I am", age, "years old!")
 // };
 
-// greet();
+// greet("anna", 15);
 
 // const greet = () => console.log("Hello There!");
 // greet();
@@ -197,76 +207,129 @@ if(weather === "rainy") {
 // }
 
 
-
 // SCOPE - variables are in your code and who can use them.
 
-// let snack = "cookie"; // global scope - any varibale outside a function. It can be accessed by anybody at any time.
+// let snack = "chocolate-cookie"; // global scope - any varibale outside a function. It can be accessed by anybody at any time.
 
 // function eatSnack() {
 //     let drink = "milk"; // local scope - Youll find this inside a function or a block. It can only be accessed inside a block or function.
-//     console.log(snack);
+//     // console.log(snack);
 //     console.log(drink);
 // }
 // eatSnack();
-// // console.log(drink);
-// // console.log(snack);
+// console.log(snack); //console log
+
+
+
 
 
 // ARRAYS - These are lists that can contain nums, strings, emojis, characters etc...
 
 // Array Syntax 
 
-let animals = ["bear", "monkey", "elephant", "lion", "zebra"];
+// let animals = ["bear", "monkey", "elephant", "lion", "zebra"];
 
 // Indexing - getting the index of an element in an array.
 
-console.log(animals[3]);
-console.log(animals[0]);
+// console.log(animals[3]); // lion
+// console.log(animals[0]); // bear
 
-console.log(animals[animals.length -3]); // accesses elements from the end of the list.
+// console.log(animals[animals.length -4]); // accesses elements from the end of the list.
+
 
 
 // ARRAY METHODS
 
 //1 .push() - adds an element to the end of the list 
 
-animals.push("rhino");
-console.log(animals);
+// animals.push("rhino");
+// console.log(animals);
 
 //2 .pop() - removes the last element
 
-animals.pop()
-console.log(animals);
+// animals.pop()
+// console.log(animals);
 
 //3.shift() - removes the first element
 
-animals.shift()
-console.log(animals);
+// animals.shift()
+// console.log(animals);
 
 //4 .unshift() - Adds to the start
 
-animals.unshift("giraffe")
-console.log(animals);
+// animals.unshift("giraffe")
+// console.log(animals);
 
 //5. slice() - Takes a piece of element from the array and creates a new array.
 
-let newList = animals.slice(3);
-console.log(animals);
-console.log(newList);
+// let newList = animals.slice(3);
+// console.log(animals);
+// console.log(newList);
 
 //.join() - Combines an array into a string
 
-let nums = [1, 20, 50, 520, 1236, 12];
+// let nums = [1, 20, 50, 520, 1236, 12];
 
-let numNew = nums.join();
-console.log(numNew);
+// let numNew = nums.join();
+// console.log(numNew);
 
-console.log(animals.join());
-
-
+// console.log(animals.join());
 
 
+// let rawString = ""
+
+// let arrayToString = animals.join();
+
+// rawString = arrayToString;
+
+// console.log(rawString);
+
+
+// .split()
+
+// let covertToArr = rawString.split(",");
+// console.log(covertToArr);
+
+
+// Array Iterator Methods 
 
 
 
+// // 1. forEach() - Does something for ecach item in an array.
+// animals.forEach((animal, index) => {
+//     animals[index] = animal[0].toUpperCase() + animal.slice(1);
+
+//   }
+// );
+// console.log(animals);
+
+// 2. filter() - Keeps only what we want to keep.
+
+// let animals2 = ["bear", "monkey", "elephant", "lion", "zebra", "baboon"];
+
+// let myAnimal = animals2.filter(animal => animal[0] === "b");
+
+// console.log(myAnimal);
+
+
+// 3. find() - finds the "first" item that matches a condition.
+
+// let animals2 = ["bear", "monkey", "elephant", "lion", "zebra", "baboon"];
+
+// let firstAnimals = animals2.find(animal => animal[0] === "b");
+// console.log(firstAnimals);
+
+
+// 4. .map() - Changes every item and creates a new array.
+// let prices = [20, 10, 60];
+
+// let double = prices.map(price => price * 2);
+// console.log(double);
+
+// 5. reduce() - combines everything into one value. Reduces an array into a single result. Mostly used to add up numbers.
+
+// let prices = [20, 10, 60];
+
+// let total = prices.reduce((sum, price) => sum + price, 0);
+// console.log(total);
 
