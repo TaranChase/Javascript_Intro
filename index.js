@@ -293,8 +293,6 @@
 
 // Array Iterator Methods 
 
-
-
 // // 1. forEach() - Does something for ecach item in an array.
 // animals.forEach((animal, index) => {
 //     animals[index] = animal[0].toUpperCase() + animal.slice(1);
