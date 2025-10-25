@@ -293,7 +293,7 @@
 
 // Array Iterator Methods 
 
-// // 1. forEach() - Does something for ecach item in an array.
+// 1. forEach() - Does something for ecach item in an array.
 // animals.forEach((animal, index) => {
 //     animals[index] = animal[0].toUpperCase() + animal.slice(1);
 
@@ -330,4 +330,249 @@
 
 // let total = prices.reduce((sum, price) => sum + price, 0);
 // console.log(total);
+
+
+// OBJECTS - key-value pairs. e.g a datbase containing somebodys info.
+
+// syntax
+
+// let person = {
+
+//     name : "Milly",
+//     age : 27,
+//     hobby : "sleeping"
+// };
+
+// console.log(person.hobby);
+
+// person.name = "Miltred";
+// console.log(person);
+
+
+// NESTED OBJECTS - Objects within Objects
+
+// let person = {
+//     name : "Milly",
+//     age : 27,
+//     hobby : "sleeping",
+//     contact : {
+//         email: "milly@moringastudent.co.ke",
+//         phone: +254-756-287-591,
+//         linkedIn: "www.linkedin/milly.com",
+//     },
+//     address : {
+//         country: "Kenya",
+//         city : "Nairobi",
+//         physical_address : "Thika"
+//     },
+// };
+
+// console.log(person.contact);
+// console.log(person.address);
+
+
+// MODIFYING OBJECTS - add, delete, change object properties.
+
+// let person = {
+//     info : {
+//     name : "Milly",
+//     age : 27,
+//     hobby : "sleeping",
+//     },
+
+//     contact : {
+//         email: "milly@moringastudent.co.ke",
+//         phone: "+254-756-287-591",
+//         linkedIn: "www.linkedin/milly.com",
+//     },
+
+//     address : {
+//         country: "Kenya",
+//         city : "Nairobi",
+//         physical_address : "Thika"
+//     },
+// };
+
+// change 
+// person.info.hobby = "dancing";
+// console.log(person);
+
+// add
+// person.info.gender = "female";
+// console.log(person);
+
+// // remove/delete
+// delete person.contact.linkedIn;
+// console.log(person);
+
+
+// LOOPS - for in, for of, while 
+
+// Loops excute code until a condition is met.
+
+// for loops - Repeats code a specific number of times.
+
+// let animals2 = ["bear", "monkey", "elephant", "lion", "zebra", "baboon"];
+
+// syntax 
+
+// for(let i = 0; i <= animals2.length; i++) {
+//     console.log(animals2[i], i)
+// };
+
+
+// Infinite Loop - A loop that keeps on executing because no condition has been met / we have not told the loop when to stop.
+
+// for...in loop - Goes through all keys or properties in an object.
+
+// let person = {
+//     info : {
+//     name : "Milly",
+//     age : 27,
+//     hobby : "sleeping",
+//     },
+
+//     contact : {
+//         email: "milly@moringastudent.co.ke",
+//         phone: "+254-756-287-591",
+//         linkedIn: "www.linkedin/milly.com",
+//     },
+
+//     address : {
+//         country: "Kenya",
+//         city : "Nairobi",
+//         physical_address : "Thika"
+//     },
+// };
+
+
+// for(let key in person.address) {
+//     console.log(key + ": " + person.address[key])
+// };
+
+
+// for.. of - Loops through array values instead of objects.
+
+// syntax 
+
+// let animals2 = ["bear", "monkey", "elephant", "lion", "zebra", "baboon"];
+
+// for(let animal of animals2) {
+//     console.log(animal, "is my favorite animal.")
+// };
+
+// while loop - Loops until a condition is met (until the code becomes false)
+
+// let greeting = "Hello";
+// let i = 3; //counter
+
+// while(i > 0) {
+//     console.log(greeting);
+    
+//     i--;
+//     //greeting = greeting - 1
+// };
+
+
+// Destructing & Spread Operator - A Short and Simple way of unpacking or combining arrays or objects.
+
+// let animals2 = ["bear", "monkey", "elephant", "lion", "zebra", "baboon"];
+
+
+// Destructing - Unpacking an array one item at a time 
+
+
+// let [first, second, third] = animals2;
+// console.log(first);
+// console.log(second);
+// console.log(third);
+
+
+// Spread Operator - Creates a copy of the original array. You can add more items to it.
+
+// let moreAnimals = [... animals2, "tiger", "buffalo", "ox"];
+// console.log(moreAnimals);
+
+
+// ----------------------------------------------------------------------------
+
+// DOM Manipulation - DOM(Document Object Model) - Renovating your webpage.
+
+
+// Change Text 
+
+// document.getElementById("personal-greeting").innerText = "Hi There!";
+
+// Change font color 
+
+// document.getElementById("info").style.color = "white";
+
+
+// Eventlisteners - These make your webpage interactive.
+
+// click
+
+// const button = document.getElementById("clickme");
+
+// button.addEventListener("click", () => {
+//     alert("Hello There!");
+// });
+
+
+// -------------------------------------------------------------------
+
+// JSON - JavaScript Object Notation - your own fake/dummy server.
+
+// fetch("http://localhost:3000/animals")  // get data from my server link
+//  .then(response => response.json())  // wait for a promise to be returned 
+//  .then(data => console.log(data));   // console log all the data from the json server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

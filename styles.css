@@ -1,0 +1,18 @@
+* {
+    background-color: brown;
+}
+
+#personal-greeting {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.info {
+    color:black;
+}
+
+#clickme {
+    background-color: green;
+    color: white;
+}
